@@ -1,0 +1,30 @@
+classDiagram
+    class ContaBancaria {
+        -String numero
+        -String titular
+        -double saldo
+        +ContaBancaria(String numero, String titular, double saldoInicial)
+        +double getSaldo()
+        +String getTitular()
+        +boolean depositar(double valor)
+        +boolean sacar(double valor)
+        +boolean transferir(double valor, ContaBancaria destino)
+    }
+
+    class Banco {
+        -ArrayList<ContaBancaria> contas
+        +Banco()
+        +boolean criarConta(String numero, String titular, double saldoInicial)
+        +ContaBancaria buscarConta(String numero)
+        +boolean realizarDeposito(String numero, double valor)
+        +boolean realizarSaque(String numero, double valor)
+        +boolean realizarTransferencia(String origem, String destino, double valor)
+        +void exibirSaldo(String numero)
+    }
+
+    class Main {
+        +static void main(String[] args)
+    }
+
+    Banco "1" *-- "0..*" ContaBancaria
+    Main --> Banco

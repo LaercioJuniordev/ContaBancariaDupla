@@ -1,0 +1,19 @@
+Você será responsável por criar a classe ContaBancaria. Pense nela como o modelo que define o que é uma conta: seus dados e as operações que ela pode realizar.
+
+Atributos (informações da conta):
+
+numero: Uma string para o número da conta.
+
+titular: Uma string com o nome do cliente.
+
+saldo: Um double para armazenar o dinheiro.
+
+Métodos (o que a conta pode fazer):
+
+Um construtor para criar uma nova conta com o número, o nome do titular e um saldo inicial.
+
+depositar(double valor): Adiciona um valor ao saldo.
+
+sacar(double valor): Retira um valor do saldo, mas apenas se houver dinheiro suficiente.
+
+transferir(double valor, ContaBancaria destino): Transfere um valor para outra conta. Isso envolve um saque da sua conta e um depósito na conta de destino.

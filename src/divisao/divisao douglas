@@ -1,0 +1,15 @@
+Seu amigo vai ser o "gerente do banco", criando a classe Banco para gerenciar todas as contas, e a classe Main para testar tudo.
+
+1. A Classe Banco
+
+Atributo:
+
+contas: Uma lista (ArrayList) de objetos ContaBancaria para guardar todas as contas criadas.
+
+Métodos (operações do banco):
+
+criarConta(...): Recebe os dados de uma conta (número, titular, saldo inicial) e cria um objeto ContaBancaria (a sua classe!) para adicionar na lista.
+
+buscarConta(String numero): Procura na lista de contas e retorna o objeto ContaBancaria correspondente.
+
+realizarDeposito(...), realizarSaque(...), realizarTransferencia(...): Esses métodos usam o buscarConta para encontrar a conta certa e, em seguida, chamam os seus métodos (depositar, sacar, transferir) para realizar a operação.
