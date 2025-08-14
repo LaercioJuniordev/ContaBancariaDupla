@@ -1,11 +1,11 @@
-public class ClasseBancaria {
+public class ContaBancaria {
     //ATRIBUTOS
     private String titular;
     private String numero;
     private double saldo;
 
     //CONSTRUTOR
-    public ClasseBancaria(String numero, String titular, double saldoInicial) {
+    public ContaBancaria(String numero, String titular, double saldoInicial) {
         this.numero = numero;
         this.titular = titular;
         this.saldo = 0;
@@ -22,7 +22,9 @@ public class ClasseBancaria {
         }
     }
     public boolean sacar(double valor){
-        //teste
+        if (valor <=0 ){
+
+        }
     }
     public boolean transferir(double valor, ContaBancaria destino){
 
